@@ -1,4 +1,4 @@
-import { programarMensaje } from '../helpers/message';
+import { programarMensaje } from '../helpers/message.js';
 
 export function iniciarMensajeDiario() {
 
