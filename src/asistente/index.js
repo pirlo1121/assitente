@@ -18,7 +18,6 @@ goSleep()
 train()
 getLunch()
 OnePerMonth()
-example();
 
 app.listen(PORT, () => {
   console.log(` Servidor encendido en el puerto ${PORT}`);

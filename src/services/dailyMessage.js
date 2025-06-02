@@ -11,12 +11,12 @@ export function getUp(){
        })
 }
 
-export function example(){
-       programarMensaje({
-        cronTime: '* * * * *',
-        body: 'probando la app',
-       })
-}
+// export function example(){
+//        programarMensaje({
+//         cronTime: '* * * * *',
+//         body: 'probando la app',
+//        })
+// }
 
 export function getLunch(){
        programarMensaje({
