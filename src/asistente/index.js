@@ -2,7 +2,7 @@ import express from 'express';
 import dotenv from 'dotenv';
 import bodyParser from 'body-parser';
 import webhookRouter from './../routes/webhook.js';
-import { getLunch, getUp, goSleep, OnePerMonth, train } from '../services/dailyMessage.js';
+import { getLunch, getUp, goSleep, OnePerMonth, pruebaa, train } from '../services/dailyMessage.js';
 
 dotenv.config();
 
@@ -18,6 +18,8 @@ goSleep()
 train()
 getLunch()
 OnePerMonth()
+// example()
+pruebaa()
 
 app.listen(PORT, () => {
   console.log(` Servidor encendido en el puerto ${PORT}`);

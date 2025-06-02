@@ -12,12 +12,14 @@ export function getUp(){
        })
 }
 
-// export function example(){
-//        programarMensaje({
-//         cronTime: '* * * * *',
-//         body: 'probando la app',
-//        })
-// }
+export async function pruebaa(){
+       let mensaje = ''
+       mensaje = await getEventosDeHoy()
+       programarMensaje({
+        cronTime: '1 13 * * *',
+        body: mensaje,
+       })
+}
 
 export function getLunch(){
        programarMensaje({

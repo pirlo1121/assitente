@@ -26,15 +26,15 @@ export async function getEventosDeHoy() {
   const eventos = res.data.items || [];
 
   if (eventos.length === 0) {
-    return '🎉 No tienes eventos programados para hoy.';
+    return ' No tienes eventos programados para hoy.';
   }
 
   return (
-    '📅 Hoy tienes:\n' +
+    `📅 *My lord, today's missions* \n` +
     eventos
       .map((evento) => {
         const hora = dayjs(evento.start.dateTime).format('HH:mm');
-        return `- ${evento.summary} a las ${hora}`;
+        return `- ${hora} - ${evento.summary}`;
       })
       .join('\n')
   );
