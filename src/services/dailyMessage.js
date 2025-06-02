@@ -1,4 +1,5 @@
 import { programarMensaje } from '../helpers/message.js';
+import { getEventosDeHoy } from './calendar.js';
 
 export function iniciarMensajeDiario() {
 
@@ -50,3 +51,17 @@ export function OnePerMonth(){
        })
 }
 
+
+
+export function getTasks(){
+       try {
+              const mensaje = getEventosDeHoy()
+                     programarMensaje({
+                     cronTime: '15 13 * * *',
+                     body: mensaje,
+       })
+              
+       } catch (err) {
+              console.error('Error al enviar eventos:', err)
+       }
+}

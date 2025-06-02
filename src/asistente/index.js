@@ -2,7 +2,7 @@ import express from 'express';
 import dotenv from 'dotenv';
 import bodyParser from 'body-parser';
 import webhookRouter from './../routes/webhook.js';
-import { example, getLunch, getUp, goSleep, OnePerMonth, train } from '../services/dailyMessage.js';
+import { getLunch, getUp, goSleep, OnePerMonth, train } from '../services/dailyMessage.js';
 
 dotenv.config();
 
