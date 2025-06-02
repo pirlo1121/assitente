@@ -20,4 +20,9 @@ const resultado = 'jejje'
   res.send(`<Response><Message>${resultado}</Message></Response>`);
 });
 
+router.get('/',async(req,res)=>{
+  console.log('funciona mano ')
+  res.send('funciona mano')
+})
+
 export default router;
