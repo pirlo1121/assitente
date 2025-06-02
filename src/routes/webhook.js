@@ -10,7 +10,7 @@ router.post('/', async (req, res) => {
 
   console.log(`💬 Mensaje recibido de ${numero}: "${mensaje}"`);
 
-  const prompt = `Un usuario dice: "${mensaje}". ¿Qué quiere hacer con su calendario? Responde claramente.`;
+  // const prompt = `Un usuario dice: "${mensaje}". ¿Qué quiere hacer con su calendario? Responde claramente.`;
 //   const respuestaIA = await getOpenAIResponse(prompt);
 // console.log()
   // const resultado = await handleCalendarCommand(respuestaIA);

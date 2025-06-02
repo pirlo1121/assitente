@@ -7,7 +7,7 @@ export function iniciarMensajeDiario() {
 
 export function getUp(){
        programarMensaje({
-        cronTime: '1 13 * * *',
+        cronTime: '31 15 * * *',
         body: 'Get up',
        })
 }
@@ -16,7 +16,7 @@ export async function pruebaa(){
        let mensaje = ''
        mensaje = await getEventosDeHoy()
        programarMensaje({
-        cronTime: '1 13 * * *',
+        cronTime: '33 15 * * *',
         body: mensaje,
        })
 }
